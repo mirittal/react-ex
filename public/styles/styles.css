@@ -3,5 +3,11 @@ body {
 }
 
 h1 {
-	font-size: 70px;
+	color:#00aac6;
+	font-size: 40px;
+}
+
+
+.grey {
+	color:#797671;
 }

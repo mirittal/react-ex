@@ -27,16 +27,6 @@ var APP = React.createClass({
 		this.setState({ status: 'disconnect' })
 	},
 
-	getData() {
-		$.ajax({
-		  url: 'https://interview.zocdoc.com/api/1/FEE/AllMovies',
-		  type: 'GET',
-		  data: {authToken: '3b502b3f-b1ff-4128-bd99-626e74836d9c'},
-		}).done(function(data) {
-		  	this.connect();
-		}.bind(this))
-	},
-
 	render() {
 		return(
 				<div>

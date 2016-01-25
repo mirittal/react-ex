@@ -11,13 +11,13 @@ var {Router, Route, IndexRoute} = ReactRouter;
 
 
 var APP = require('./components/APP');
-var Welcome = require('./components/Welcome');
+var Home = require('./components/Home');
 var Movies = require('./components/Movies'); 
 var Movie = require('./components/Movie'); 
 
 var routes = (
 	<Route path="/" component={APP}>
-	  	<IndexRoute component={Welcome}/>
+	  	<IndexRoute component={Home}/>
 	  	<Route path="movies" component={Movies} />
 	  	<Route path="/movie/:id" component={Movie}/>
 	</Route>
