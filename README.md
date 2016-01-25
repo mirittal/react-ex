@@ -1,6 +1,11 @@
 # react-ex
 
-Run
+## Installation
+
+> npm install
+will install all dependencies as defined in package.json
+
+## Run
 
 > npm start
 
