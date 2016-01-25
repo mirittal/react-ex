@@ -4,4 +4,6 @@ Run
 
 > npm start
 
-start will run webpack following by node server then start an express server on http://localhost:3000
+App now runs at: http://localhost:3000
+npm start will run webpack (pack all js files and convert ES6 to ES5 and react jsx)   
+following by starting a node/express server  
