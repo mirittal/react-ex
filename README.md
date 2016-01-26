@@ -26,6 +26,8 @@ following by starting a node/express server
 - Add flux to manage the API calls
 - Better responsive exeprience - especially different solution for hover state
 - Better treatment for long movie titles and long descriptions
+- authToken treatment - need more info - should expire 3 hours from initial use (go to login module?)
+- Save api responses in local storage, not to repeat calls
 - Slider plugin on homepage is a bit buggy - pauseOnHover state is not working, so I decided not to use auto-play, although this would be my preference.
 - Add websync and less-reload to webpack (instead of gulp)
 - Progressive loading of movie list
