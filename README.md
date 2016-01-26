@@ -4,7 +4,7 @@
 
 > npm install
 
-will install all dependencies as defined in package.json
+Install project dependencies as defined in package.json
 
 ## Run
 
