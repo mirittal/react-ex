@@ -3,6 +3,7 @@
 ## Installation
 
 > npm install
+
 will install all dependencies as defined in package.json
 
 ## Run
