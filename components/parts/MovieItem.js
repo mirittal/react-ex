@@ -6,7 +6,7 @@ var MovieItem =	React.createClass({
   	render(){
   		    
 		return (
-			<div key={'i'+this.props.item.Id} className="movie-frame">
+			<div key={'i'+ this.props.item.Id} className="movie-frame">
 				<img src="images/placeholder.jpg" />
 				<h3><Link to={'/movie/' + this.props.item.Id}>{this.props.item.Name}</Link></h3>
 				<div className="more-info">

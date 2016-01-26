@@ -2,6 +2,7 @@ var React = require('react');
 var ReactDOM = require('react-dom');
 var ReactRouter = require('react-router');
 
+
 var {Router, Route, IndexRoute} = ReactRouter;
 // playing with ES6 syntax. Babel will convert to ES5 equivalent: 
 // var Router = ReactRouter.Router;

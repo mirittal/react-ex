@@ -7,12 +7,17 @@ module.exports = {
 	module: {
 		loaders: [
 			{
+				test: /\.js$/,
 			    exclude: /(node_modules|app-server.js)/,
 			    loader: 'babel-loader',
 			    query: {
 			        presets: ['es2015', 'react']
 			    }
-			}
+			},
+			{
+		        test: /\.less$/,
+		        loader: "style!css!less"
+		      }
 		]
 	}
 }

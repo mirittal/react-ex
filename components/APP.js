@@ -4,7 +4,6 @@ var Router = require('react-router');
 var $ = require('jquery');
 var Header = require('./parts/Header')
 
-
 var APP = React.createClass({
 	
 	getInitialState() {

@@ -64,9 +64,9 @@ var Home = React.createClass({
 		
 		return (
 			<div>
-				<h2>Top 10 movies of the year</h2>
+				<h2>Top 10 Movies of the Year</h2>
 				<Movie items={this.state.movies} />	
-				<h3><Link to={'/movies/'}>All Movies</Link></h3>			
+				<div className="call-to-actions"><Link to={'/movies/'} className="btn btn-secondary">Find More Movies</Link></div>
 			</div>
 		
 		);
@@ -78,7 +78,7 @@ var Movie =	React.createClass({
 	showMore(item) {
  		return (
  			<p>
- 			<b>Actors:</b> 
+ 				<b>Actors:</b> 
 				<span>
 				{ 
 					item.Actors.map(function(i){ 

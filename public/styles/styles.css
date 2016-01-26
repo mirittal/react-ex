@@ -1,73 +1,112 @@
-body {
-	
+.movie-frame {
+  color: #fff;
+  padding: 15px;
+  height: 400px !important;
+  background: #232526;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to top, #232526, #414345);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to top, #232526, #414345);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  position: relative;
+  text-align: center;
 }
-
-h1 {
-	color:#00aac6;
-	font-size: 40px;
+.movie-frame h3 {
+  text-align: center;
+  font-size: 20px;
+  line-height: 1.2;
 }
-
-
+.movie-frame a {
+  color: #fff;
+}
+.movie-frame img {
+  max-width: 90%;
+  margin: auto;
+}
+.movie-frame .more-info {
+  display: none;
+  text-align: left;
+}
+.movie-frame .more-info p {
+  overflow: auto;
+  height: 150px;
+  padding-right: 20px;
+}
+.movie-frame .more-info h2 {
+  font-size: 18px;
+}
+.movie-frame .more-info h3 {
+  text-align: left;
+  font-size: 22px;
+}
+.movie-frame:hover .more-info {
+  display: block;
+  position: absolute;
+  top: 0px;
+  left: 0;
+  width: 100%;
+  padding: 30px;
+  background: rgba(0, 0, 0, 0.7);
+  height: 400px;
+}
+.movie-frame .main-button {
+  position: absolute;
+  bottom: 20px;
+  z-index: 999;
+  width: 100%;
+  text-align: center;
+  left: 0;
+}
+h1 a {
+  color: #00aac6 !important;
+  font-size: 40px;
+  text-decoration: none!important;
+}
+h1 a:hover,
+h1 a:active {
+  color: #00aac6;
+  text-decoration: none!important;
+}
 .grey {
-	color:#797671;
+  color: #797671;
 }
-
 .slick-slide {
-	border:6px #000 solid;
-	color:#fff;
-	padding: 15px;
-	min-height:400px !important;
-	background: #000000; /* fallback for old browsers */
-	background: -webkit-linear-gradient(to bottom, #000000 , #53346D); /* Chrome 10-25, Safari 5.1-6 */
-	background: linear-gradient(to bottom, #000000 , #53346D); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    position: relative;           
+  border: 6px #000 solid;
 }
-
-.slick-slide h3 { 
-	text-align: center;
-	font-size: 24px;
+#AllMovies {
+  margin-top: 20px;
 }
-
-.slick-slide a {
-	color:#fff;
+#AllMovies li {
+  vertical-align: top;
+  margin-top: 15px;
 }
-
-.slick-slide img {
-	max-width: 90%;
-	margin: auto;
+#AllMovies li .movie-frame {
+  width: 280px;
+  vertical-align: top;
 }
-
-.slick-slide .more-info {
-	display: none;
+.call-to-actions {
+  text-align: center;
+  margin-top: 50px;
+  color: #fff;
+  background: #232526;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to top, #232526, #414345);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to top, #232526, #414345);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
-
-.slick-slide:hover .more-info {
-	display: block;
-	position: absolute;
-	top:0px;
-	left:0;
-	width:100%;
-	padding:30px;
-	background:rgba(0,0,0,0.7);
-	height:390px;
-	
+.call-to-actions:hover {
+  background: #414345;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to bottom, #232526, #414345);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to bottom, #232526, #414345);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
-
-.slick-slide .more-info p {
-	overflow: auto;
-	height:150px;
-	padding-right: 20px;
+.call-to-actions a {
+  color: #fff;
+  font-weight: bold;
 }
-
-.slick-slide .more-info h2 {
-	text-align: left;
-}
-
-.slick-slide .main-button {
-	position: absolute;
-	bottom: 20px;
-	z-index: 999;
-	width: 100%;
-	text-align: center;
-	
+.call-to-actions a:hover {
+  color: #fff;
 }

@@ -3,9 +3,10 @@
 var gulp = require('gulp');
 var browserSync = require('browser-sync');
 var nodemon = require('gulp-nodemon');
+var less = require('gulp-less');
+var path = require('path');
 
-
-gulp.task('default', ['browser-sync'], function () {
+gulp.task('default', ['browser-sync', 'less', 'watch'], function () {
 });
 
 gulp.task('browser-sync', ['nodemon'], function() {
@@ -30,4 +31,20 @@ gulp.task('nodemon', function (cb) {
 			started = true; 
 		} 
 	});
+});
+
+// Watcher will look for changes and execute tasks
+gulp.task('watch', ['browser-sync'], () => {
+	gulp.watch('./public/styles/less/*.less', ['less']);
+});
+ 
+
+ 
+gulp.task('less', function () {
+  return gulp.src('./public/styles/less/*.less')
+    .pipe(less({
+      paths: [ path.join(__dirname, 'less', 'includes') ]
+    }))
+    .pipe(gulp.dest('./public/styles'))
+    .pipe(browserSync.reload({stream:true}));
 });
