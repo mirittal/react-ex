@@ -6,7 +6,6 @@ var Navbar = require('react-bootstrap').Navbar;
 var NavDropdown = require('react-bootstrap').NavDropdown;
 var MenuItem = require('react-bootstrap').MenuItem;
 var MovieItem = require('./parts/MovieItem');
-var Display = require('./parts/Display');
 var Request = require('../utils/Request');
 require('../utils/Utils');
 
