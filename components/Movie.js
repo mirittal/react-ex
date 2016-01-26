@@ -21,7 +21,7 @@ var Movie = React.createClass({
 
 	render() {
 	    return (
-		      <div>
+		      <div className="container">
 		      	{
 	      			this.state.movieInfo.map(function(item,i) {
 	      				return (

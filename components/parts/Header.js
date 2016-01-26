@@ -5,12 +5,14 @@ var Header = React.createClass({
 	render(){
 		return (
 			<header className="row">
-				<div className="col-xs-10">
+				<div className="col-xs-6">
 					<h1><a href="#">Zoc<span className="grey">Movies</span></a></h1>
 				</div>
-				<div className="col-xs-2">
-					<span>Hi user</span> |
-					<Link to={'/movies'}> Browse All</Link>
+				<div className="col-xs-6">
+					<nav>
+						<span>Welcome!</span> |
+						<Link to={'/movies'}> Browse All</Link>
+					</nav>
 				</div>
 			</header>
 		)

@@ -1,3 +1,6 @@
+header nav {
+  text-align: right;
+}
 .movie-frame {
   color: #fff;
   padding: 15px;
@@ -19,6 +22,19 @@
 .movie-frame a {
   color: #fff;
 }
+.movie-frame a.read-more {
+  background-color: #fff;
+  color: #000;
+  display: inline-block;
+  text-align: center;
+  border: 1px #000 solid;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 2px 8px;
+}
+.movie-frame a:hover {
+  text-decoration: none;
+}
 .movie-frame img {
   max-width: 90%;
   margin: auto;
@@ -32,12 +48,14 @@
   height: 150px;
   padding-right: 20px;
 }
-.movie-frame .more-info h2 {
-  font-size: 18px;
-}
 .movie-frame .more-info h3 {
-  text-align: left;
   font-size: 22px;
+  margin-top: 0;
+  text-align: left;
+}
+.movie-frame .more-info h4 {
+  text-align: left;
+  font-size: 18px;
 }
 .movie-frame:hover .more-info {
   display: block;
@@ -106,6 +124,7 @@ h1 a:active {
 .call-to-actions a {
   color: #fff;
   font-weight: bold;
+  display: block;
 }
 .call-to-actions a:hover {
   color: #fff;
