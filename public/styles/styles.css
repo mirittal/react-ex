@@ -11,3 +11,63 @@ h1 {
 .grey {
 	color:#797671;
 }
+
+.slick-slide {
+	border:6px #000 solid;
+	color:#fff;
+	padding: 15px;
+	min-height:400px !important;
+	background: #000000; /* fallback for old browsers */
+	background: -webkit-linear-gradient(to bottom, #000000 , #53346D); /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to bottom, #000000 , #53346D); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    position: relative;           
+}
+
+.slick-slide h3 { 
+	text-align: center;
+	font-size: 24px;
+}
+
+.slick-slide a {
+	color:#fff;
+}
+
+.slick-slide img, .slick-slide img {
+	max-width: 90%;
+	margin: auto;
+}
+
+.slick-slide .more-info {
+	display: none;
+}
+
+.slick-slide:hover .more-info {
+	display: block;
+	position: absolute;
+	top:0px;
+	left:0;
+	width:100%;
+	padding:30px;
+	background:rgba(0,0,0,0.7);
+	height:390px;
+	
+}
+
+.slick-slide .more-info p {
+	overflow: auto;
+	height:150px;
+	padding-right: 20px;
+}
+
+.slick-slide .more-info h2 {
+	text-align: left;
+}
+
+.slick-slide .main-button {
+	position: absolute;
+	bottom: 20px;
+	z-index: 999;
+	width: 100%;
+	text-align: center;
+	
+}

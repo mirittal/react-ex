@@ -10,7 +10,7 @@ var Header = React.createClass({
 		return (
 			<header className="row">
 				<div className="col-xs-10">
-					<h1>Zoc<span class="grey">Movies</span></h1>
+					<h1>Zoc<span className="grey">Movies</span></h1>
 				</div>
 				<div className="col-xs-2">
 					<span>Hi user</span>
