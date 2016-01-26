@@ -16,10 +16,11 @@ following by starting a node/express server
 
 
 ## Notes
-- Project github: https://github.com/mirittal/react-ex.git 
+- Project github: https://github.com/mirittal/react-ex.git
+- This assignment was an opprtunity to learn ReactJS and experiment with ES6 new features.
 - Running the app on dev mode assumes you have node installed.
 - If you can't run the project either browse to /public and click index.html or goto: http://miritt.org/zocdoc-ex (there's currently a bug with the homepage slider icons, but I'm hoping to fix it soon)
-- This excercise took more than the suggested 4 hours to complete, since I decided to take advantage of this task and learn ReactJS. I was also playing around with the new ES6 syntax.
+
 
 
 ## TODO - open tasks
