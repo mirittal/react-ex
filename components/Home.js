@@ -3,6 +3,7 @@ var Link = require('react-router').Link;
 var $ = require('jquery');
  global.jQuery = $; 
 // require('bootstrap')
+var MovieItem = require('./parts/MovieItem');
 var Slider = require('react-slick');
 var Request = require('../utils/Request');
 
@@ -62,10 +63,12 @@ var Home = React.createClass({
 	render() {
 		
 		return (
-			<div className="slider-wrapper">
+			<div>
 				<h2>Top 10 movies of the year</h2>
-				<Movie items={this.state.movies} />				
+				<Movie items={this.state.movies} />	
+				<h3><Link to={'/movies/'}>All Movies</Link></h3>			
 			</div>
+		
 		);
 
 	}
@@ -89,20 +92,11 @@ var Movie =	React.createClass({
 
 	addMovie(item, i) {
 		return (
-			<div key={i} className="movie-frame">
-				<img src="images/placeholder.jpg" />
-				<h3><Link to={'/movie/' + i}>{item.Name}</Link></h3>
-				<div className="more-info">
-					<h3>{item.Name}</h3>
-					<h4>Director: {item.Director}</h4>
-					<p>{item.Description}</p>
-					<Link to={'/movie/' + i}>Read More</Link>
-				</div>
-				<div className="main-button">
-					<button className="btn btn-info">Get Tickets</button>
-				</div>
-		    </div>
+			<div key={item.Id}>
+				<MovieItem item={item} />
+			</div>
 		)
+		
 	},
 
   	render(){
@@ -112,7 +106,7 @@ var Movie =	React.createClass({
 		    speed: 700,
 		    slidesToShow: 3,
 		    slidesToScroll: 1,
-		    autoplay: true,
+		    autoplay: false,
 		    arrows: true,
 		    pauseOnHover: true,
 		    responsive: [
