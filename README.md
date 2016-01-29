@@ -32,4 +32,5 @@ following by starting a node/express server
 - Slider plugin on homepage is a bit buggy - pauseOnHover state is not working, so I decided not to use auto-play, although this would be my preference.
 - Add websync and less-reload to webpack (instead of gulp)
 - Progressive loading of movie list
+- Minify JS and CSS. Clean unused includes.
 - More styling...
