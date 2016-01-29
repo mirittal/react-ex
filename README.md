@@ -31,6 +31,6 @@ following by starting a node/express server
 - Save api responses in local storage, not to repeat calls
 - Slider plugin on homepage is a bit buggy - pauseOnHover state is not working, so I decided not to use auto-play, although this would be my preference.
 - Add websync and less-reload to webpack (instead of gulp)
-- Progressive loading of movie list
 - Minify JS and CSS. Clean unused includes.
+- Progressive loading of movie list
 - More styling...
