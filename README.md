@@ -17,7 +17,7 @@ following by starting a node/express server
 ## Build for porduction
 > webpack -p
 
-Will minify code
+Will minify code for production
 
 
 ## Notes
