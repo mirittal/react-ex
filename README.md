@@ -14,6 +14,11 @@ App now runs at: http://localhost:5000
 npm start will run webpack (pack all js files and convert ES6 to ES5 and react jsx)   
 following by starting a node/express server  
 
+## Build for porduction
+> webpack -p
+
+Will minify code
+
 
 ## Notes
 - Project github: https://github.com/mirittal/react-ex.git
@@ -31,6 +36,5 @@ following by starting a node/express server
 - Save api responses in local storage, not to repeat calls
 - Slider plugin on homepage is a bit buggy - pauseOnHover state is not working, so I decided not to use auto-play, although this would be my preference.
 - Add websync and less-reload to webpack (instead of gulp)
-- Minify JS and CSS. Clean unused includes.
 - Progressive loading of movie list
 - More styling...
