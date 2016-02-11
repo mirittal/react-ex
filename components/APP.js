@@ -4,8 +4,7 @@ var Router = require('react-router');
 var $ = require('jquery');
 var Header = require('./parts/Header')
 
-var APP = React.createClass({
-	
+var APP = React.createClass({	
 	getInitialState() {
 		return {
 			status: 'disconnected'
@@ -35,6 +34,5 @@ var APP = React.createClass({
 		);
 	}
 })
-
 
 module.exports = APP;

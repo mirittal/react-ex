@@ -25,7 +25,6 @@ gulp.task('nodemon', function (cb) {
 		script: 'app-server.js'
 	}).on('start', function () {
 		// to avoid nodemon being started multiple times
-		// thanks @matthisk
 		if (!started) {
 			cb();
 			started = true; 
@@ -35,13 +34,13 @@ gulp.task('nodemon', function (cb) {
 
 // Watcher will look for changes and execute tasks
 gulp.task('watch', ['browser-sync'], () => {
-	gulp.watch('./public/styles/less/*.less', ['less']);
+	gulp.watch('./public/styles/less/styles.less', ['less']);
 });
  
 
  
 gulp.task('less', function () {
-  return gulp.src('./public/styles/less/*.less')
+  return gulp.src('./public/styles/less/styles.less')
     .pipe(less({
       paths: [ path.join(__dirname, 'less', 'includes') ]
     }))

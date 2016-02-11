@@ -25,7 +25,7 @@ var Movie = React.createClass({
 		      	{
 	      			this.state.movieInfo.map(function(item,i) {
 	      				return (
-		      				<div>
+		      				<div key={i}>
 			      				<h1>{item.Name}</h1>
 						        <h2>Director: {item.Director}</h2>
 

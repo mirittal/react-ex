@@ -9,10 +9,7 @@ var MovieItem = require('./parts/MovieItem');
 var Request = require('../utils/Request');
 require('../utils/Utils');
 
-
-
 var Movies = React.createClass({
-	
 	getInitialState() {
 		return {
 			title: "ALL MOVIES",
@@ -29,7 +26,6 @@ var Movies = React.createClass({
 			this.setState({ allMovies: data })
 			this.generateUniqueLists();
 		}.bind(this));
-	
 	},
 
 	generateUniqueLists() {
@@ -126,7 +122,7 @@ var Movies = React.createClass({
 var Movie =	React.createClass({
 	addMovie(item, i) {
 		return (
-			<li><MovieItem key={'mi' + i} item={item} /></li>
+			<li key={'mi' + i}><MovieItem item={item} /></li>
 		)
 	},
   	render(){	
