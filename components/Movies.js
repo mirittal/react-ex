@@ -112,14 +112,14 @@ var Movies = React.createClass({
 				    </Nav>
 				  </Navbar>
 				
-				<Movie items={this.state.movies} />
+				<MovieList items={this.state.movies} />
 			</div>
 		);
 
 	}
 });
 
-var Movie =	React.createClass({
+var MovieList =	React.createClass({
 	addMovie(item, i) {
 		return (
 			<li key={'mi' + i}><MovieItem item={item} /></li>

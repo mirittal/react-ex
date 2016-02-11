@@ -28,7 +28,6 @@ var Movie = React.createClass({
 		      				<div key={i}>
 			      				<h1>{item.Name}</h1>
 						        <h2>Director: {item.Director}</h2>
-
 						        <p>{item.Description}</p>
 						        <p><b>Duration:</b> {item.Duration} </p>
 						        <p><b>Generes:</b> {item.Genres.toString()}</p>
